@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="a">
+<input id="b">
+<input id="c">
+<p id="3canh"></p>
+<button onclick="show()">show</button>
+
+</body>
+<script>
+    let a = parseInt(prompt("Nhập a :"));
+    let b = parseInt(prompt("Nhập b :"));
+    let c = parseInt(prompt("Nhập c :"));
+
+
+
+    if (((a+b>c)&&(a+c>b))&&(b+c>a)) {
+        tamgiac = "a,b,c la 3 canh cua 1 tam giac";
+        if(((a===b)||(a===c)) ||(b===c)) {
+            tamgiac = "a,b,c la 3 canh cua 1 tam giac can";
+        } else if ((a===b)&&(a===c)) {
+            tamgiac = "a,b,c la 3 canh cua 1 tam giac deu";
+        }else if (((a*a===b**b+c*c)||(b*b===a**a+c*c))||(c*c===b**b+a*a)) {
+            tamgiac = "a,b,c la 3 canh cua 1 tam giac vuong";
+        }
+    }
+</script>
+</html>

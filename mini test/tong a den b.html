@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+
+        function show() {
+
+let i
+
+            let sum = 0
+            let b = (document.getElementById("x").value);
+            let a = (document.getElementById("b").value);
+            if  (a>b){
+                alert(12);}
+
+            else {
+                for (i = a; i <= b; i++)
+                    sum = sum + i;
+
+
+            }
+                document.getElementById("abc").innerHTML = ("sum"+ "=" + (sum));
+
+
+
+        }
+    </script>
+    <script>
+        let count = 0
+        let i = 19
+        for (i; count<20;i++){
+            if (i%2==0 && i%3==0){
+                count++
+                document.write(i=",")
+            }
+        }
+    </script>
+
+
+</head>
+<body>
+
+
+
+
+<input id="x" type="number">
+<input id="b" type="number">
+<p id="abc"></p>
+
+<button onclick="show()">Show</button>
+
+
+</body>
+</html>

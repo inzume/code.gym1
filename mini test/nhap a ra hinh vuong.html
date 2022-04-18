@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="x">
+<p id="y"></p>
+<p id="z"></p>
+<button onclick="show()">Show</button>
+</body>
+<script>
+    function show(){
+    let a = parseInt(document.getElementById("x").value);
+    document.getElementById("y").innerHTML = ("s la"+  (a*a));
+    document.getElementById("z").innerHTML = ("p la"+  (a*2));
+    }
+</script>
+</html>
